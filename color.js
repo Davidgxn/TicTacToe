@@ -10,10 +10,10 @@ let contador = 1;
 botonC.addEventListener("click", cambiarModo);
 
 function cambiarModo() {
-    if (imagenC.src == "http://127.0.0.7:5500/moon.svg") {
-        imagenC.src = "sun.svg";
+    if (imagenC.attributes[0].value == "./moon.svg") {
+        imagenC.attributes[0].value = "./sun.svg";
     } else {
-        imagenC.src = "moon.svg";
+        imagenC.attributes[0].value = "./moon.svg";
     }
     if (bodyC.className == "body-noche") {
         bodyC.className = "body-dia";
