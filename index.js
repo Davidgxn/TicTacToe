@@ -18,18 +18,20 @@ function reiniciarTablero() {
 }
 
 tablero.addEventListener("click", function(event) {
-    let casilla = event.target;
-    if (!finDelJuego && !casillaOcupada(casilla)) {
-        if (llamadas % 2 == 0) {
-            casilla.children[0].innerHTML = "O";
-            llamadas++;
-            actualizarTurno();
-            comprobarFinal(casilla);
-        } else {
-            casilla.children[0].innerHTML = "X";
-            llamadas++;
-            actualizarTurno();
-            comprobarFinal(casilla);
+    if (event.target.id != "tablero") {
+        let casilla = event.target;
+        if (!finDelJuego && !casillaOcupada(casilla)) {
+            if (llamadas % 2 == 0) {
+                casilla.children[0].innerHTML = "O";
+                llamadas++;
+                actualizarTurno();
+                comprobarFinal(casilla);
+            } else {
+                casilla.children[0].innerHTML = "X";
+                llamadas++;
+                actualizarTurno();
+                comprobarFinal(casilla);
+            }
         }
     }
 });

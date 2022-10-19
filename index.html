@@ -7,48 +7,50 @@
     <title>TikTakToe | David González</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body class="body">
+<body class="body-noche" id="body">
     
     <main class="main">
-        <h1 class="titulo">TikTakToe</h1>
+        <button class="cambiar" id="boton"><img src="sun.svg" alt="" id="imagen"></button>
+        <h1 class="titulo-noche" id="titulo">TikTakToe</h1>
         <section class="seccion">
             <div class="contenedor">
-                <p class="texto texto__arriba" id="turno">Le toca al jugador X</p>
+                <p class="texto-noche" id="turno">Le toca al jugador X</p>
                 <div class="tablero" id="tablero">
-                    <div class="casilla" id="1">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="1">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="2">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="2">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="3">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="3">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="4">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="4">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="5">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="5">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="6">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="6">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="7">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="7">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="8">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="8">
+                        <h1 class="content-noche"></h1>
                     </div>
-                    <div class="casilla" id="9">
-                        <h1 class="content"></h1>
+                    <div class="casilla-noche" id="9">
+                        <h1 class="content-noche"></h1>
                     </div>
                 </div>
-                <input type="submit" value="Resetear tablero" class="boton" id="reset">
+                <input type="submit" value="Resetear tablero" class="boton-noche" id="reset">
             </div>
         </section>
     </main>
 
     <script src="index.js"></script>
+    <script src="color.js"></script>
 
 </body>
 </html>
